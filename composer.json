@@ -1,0 +1,16 @@
+{
+    "require": {
+        "swagger-api/swagger-ui": "^4.0",
+        "zircote/swagger-php": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Project\\": "src/"
+        }
+    },
+    "scripts": {
+        "openapi": "vendor/bin/openapi -b vendor/autoload.php --format yaml --output openapi.yaml src/",
+        "do-something": "MyVendor\\MyClass::doSomething"
+    }
+}
+

@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: 'My API'
+  version: 1.0.0
+paths:
+  /api/data:
+    get:
+      operationId: 558aa233b3d9b87d4fdf63e9984271db
+      responses:
+        '200':
+          description: 'Returns data'
+  /api/datascore:
+    get:
+      operationId: 05f87f841cb17bb3f1041a9e6c753eb3
+      responses:
+        '200':
+          description: 'Returns data'
