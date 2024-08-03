@@ -1,7 +1,9 @@
 {
     "require": {
         "swagger-api/swagger-ui": "^4.0",
-        "zircote/swagger-php": "^4.0"
+        "zircote/swagger-php": "^4.0",
+        "slim/slim" : "4.*",
+        "slim/psr7": "1.*"
     },
     "autoload": {
         "psr-4": {
@@ -9,7 +11,8 @@
         }
     },
     "scripts": {
-        "openapi": "vendor/bin/openapi -b vendor/autoload.php --format yaml --output openapi.yaml src/",
+        "openapi": "vendor/bin/openapi -b vendor/autoload.php --format yaml --output public/openapi.yaml src/",
+        "vendor-public": "mkdir -p public/swagger-ui && cp -r vendor/swagger-api/swagger-ui/dist/* public/swagger-ui/",
         "do-something": "MyVendor\\MyClass::doSomething"
     }
 }

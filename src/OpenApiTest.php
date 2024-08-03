@@ -19,9 +19,13 @@ class OpenApiTest
             )
         ]
     )]
+    /**
+     * Get Data 
+     * Logic to fetch and return data
+     */
     public function getData()
     {
-        // Logic to fetch and return data
+        return json_encode(['API', 'DATA']);
     }
 
     #[OA\Get(
@@ -33,9 +37,13 @@ class OpenApiTest
             )
         ]
     )]
+    /**
+     * Get DataScore
+     * Logic to fetch and return data
+     */
     public function getDataScore()
     {
-        // Logic to fetch and return data
+        return json_encode(['API', 'DATASCORE']);
     }
 
 }
