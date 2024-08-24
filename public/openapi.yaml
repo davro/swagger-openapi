@@ -5,13 +5,43 @@ info:
 paths:
   /api/data:
     get:
-      operationId: 558aa233b3d9b87d4fdf63e9984271db
+      summary: "Get Data by ID\nLogic to fetch and return data"
+      operationId: getData
       responses:
         '200':
           description: 'Returns data'
+  '/api/data/{id}':
+    get:
+      summary: "Get Data by ID\nLogic to fetch and return data"
+      operationId: getDataById
+      parameters:
+        -
+          name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Returns data by id'
   /api/datascore:
     get:
-      operationId: 05f87f841cb17bb3f1041a9e6c753eb3
+      summary: "Get DataScore\nLogic to fetch and return data"
+      operationId: getDataScore
       responses:
         '200':
-          description: 'Returns data'
+          description: 'Returns dataiscore'
+  '/api/datascore/{score}':
+    get:
+      summary: 'Get DataScore by Score'
+      operationId: getDataScoreByScore
+      parameters:
+        -
+          name: score
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 'Returns datascore by score'

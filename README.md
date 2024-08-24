@@ -1,5 +1,5 @@
 
-## Guzzle Swagger 
+## Guzzle Swagger
 
 Swagger attributes test for api documentation generation.
 
@@ -14,6 +14,7 @@ Swagger and OpenAPI is a powerful combination and provides tools required for la
 - **[Swagger Migration to v4](https://github.com/zircote/swagger-php/blob/master/docs/guide/migrating-to-v4.md)**
 - **[Swagger Examples](https://github.com/zircote/swagger-php/tree/master/Examples)**
 - **[Swagger Example Petstore UI](https://petstore.swagger.io/)**
+- **[Swagger OpenAI Slim](https://medium.com/swlh/integrate-openapi-into-slim-php-project-15dd9e1dc398)**
 - **[Composer Scripts](https://getcomposer.org/doc/articles/scripts.md)**
 - **[PHP Attributes](https://php.watch/articles/php-attributes)**
 

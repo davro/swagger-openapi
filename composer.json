@@ -2,6 +2,7 @@
     "require": {
         "swagger-api/swagger-ui": "^4.0",
         "zircote/swagger-php": "^4.0",
+        "symfony/yaml": "^6.0",
         "slim/slim" : "4.*",
         "slim/psr7": "1.*"
     },

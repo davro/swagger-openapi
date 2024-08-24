@@ -5,6 +5,7 @@ require '../vendor/autoload.php';
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
+use Project\OpenApiTest;
 
 $app = AppFactory::create();
 
@@ -16,15 +17,15 @@ $app = AppFactory::create();
 
 // API Data
 $app->get('/api/data', function (Request $request, Response $response, $args) {
-    $openapiTest = new Project\OpenApiTest;
-    $response->getBody()->write($openapiTest->getData());
+    $api = new OpenApiTest;
+    $response->getBody()->write($api->getData());
     return $response;
 });
 
 // API DataScore
 $app->get('/api/datascore', function (Request $request, Response $response, $args) {
-    $openapiTest = new Project\OpenApiTest;
-    $response->getBody()->write($openapiTest->getDataScore());
+    $api = new OpenApiTest;
+    $response->getBody()->write($api->getDataScore());
     return $response;
 });
 
